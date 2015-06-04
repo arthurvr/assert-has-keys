@@ -1,6 +1,6 @@
 {
   "name": "assert-has-keys",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Assert that an object has specific properties",
   "license": "MIT",
   "repository": "arthurvr/assert-has-keys",
