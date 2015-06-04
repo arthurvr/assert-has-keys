@@ -1,0 +1,34 @@
+{
+  "name": "assert-has-keys",
+  "version": "0.0.0",
+  "description": "Assert that an object has specific properties",
+  "license": "MIT",
+  "repository": "arthurvr/assert-has-keys",
+  "author": {
+    "name": "Arthur Verschaeve",
+    "email": "contact@arthurverschaeve.be",
+    "url": "arthurverschaeve.be"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "keys",
+    "property",
+    "properties",
+    "key",
+    "object",
+    "assert",
+    "test",
+    "AssertionError"
+  ],
+  "devDependencies": {
+    "mocha": "*"
+  }
+}
