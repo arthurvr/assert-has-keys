@@ -26,24 +26,6 @@ describe('assertHasKeys(object, \'key\')', function () {
 	});
 });
 
-describe('the assertion error', function () {
-	it('should throw a valid assert.AssertionError', function () {
-		try {
-			assertHasKeys({foo: 'bar'}, 'bar');
-		} catch (err) {
-			assert(err instanceof assert.AssertionError);
-		}
-	});
-
-	it('should have a good message', function () {
-		try {
-			assertHasKeys({foo: 'bar'}, 'bar');
-		} catch (err) {
-			assert.equal(err.message, 'bar is missing');
-		}
-	});
-});
-
 describe('assertHasKeys(object, [\'key1\', \'key1\'])', function () {
 	it('should pass when all keys are in the object', function () {
 		assertHasKeys({foo: 'bar', bar: 'foo'}, ['foo', 'bar']);
@@ -63,5 +45,23 @@ describe('assertHasKeys(object, [\'key1\', \'key1\'])', function () {
 				bar: 'bar'
 			}, ['foo', 'foobar', 'bar']);
 		});
+	});
+});
+
+describe('the assertion error', function () {
+	it('should throw a valid assert.AssertionError', function () {
+		try {
+			assertHasKeys({foo: 'bar'}, 'bar');
+		} catch (err) {
+			assert(err instanceof assert.AssertionError);
+		}
+	});
+
+	it('should have a good message', function () {
+		try {
+			assertHasKeys({foo: 'bar'}, 'bar');
+		} catch (err) {
+			assert.equal(err.message, 'bar is missing');
+		}
 	});
 });
