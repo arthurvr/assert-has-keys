@@ -18,6 +18,12 @@ describe('assertHasKeys(object, \'key\')', function () {
 			assertHasKeys({foo: 'bar'}, 'bar');
 		});
 	});
+
+	it('should throw a TypeError when the key is not a string', function () {
+		assert.throws(function () {
+			assertHasKeys({foo: 'bar'}, 4);
+		}, TypeError);
+	});
 });
 
 describe('the assertion error', function () {
