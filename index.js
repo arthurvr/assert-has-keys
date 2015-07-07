@@ -1,13 +1,10 @@
 'use strict';
 var assert = require('assert');
+var arrify = require('arrify');
 var AssertionError = assert.AssertionError;
 
 module.exports = function (obj, keys) {
-	if (!Array.isArray(keys)) {
-		keys = [keys];
-	}
-
-	keys.forEach(function (key) {
+	arrify(keys).forEach(function (key) {
 		if (typeof key !== 'string') {
 			throw new TypeError('assert-has-keys expects keys to be strings');
 		}

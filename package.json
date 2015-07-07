@@ -30,5 +30,8 @@
   ],
   "devDependencies": {
     "mocha": "*"
+  },
+  "dependencies": {
+    "arrify": "^1.0.0"
   }
 }
