@@ -26,12 +26,13 @@
     "object",
     "assert",
     "test",
-    "AssertionError"
+    "AssertionError",
+    "tdd"
   ],
-  "devDependencies": {
-    "mocha": "*"
-  },
   "dependencies": {
     "arrify": "^1.0.0"
+  },
+  "devDependencies": {
+    "mocha": "*"
   }
 }

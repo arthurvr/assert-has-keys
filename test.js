@@ -61,7 +61,7 @@ describe('the assertion error', function () {
 		try {
 			assertHasKeys({foo: 'bar'}, 'bar');
 		} catch (err) {
-			assert.equal(err.message, 'bar is missing');
+			assert.equal(err.message, 'bar property is missing');
 		}
 	});
 });

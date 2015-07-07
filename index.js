@@ -11,7 +11,7 @@ module.exports = function (obj, keys) {
 
 		if (!obj.hasOwnProperty(key)) {
 			throw new AssertionError({
-				message: key + ' is missing'
+				message: key + ' property is missing'
 			});
 		}
 	});
