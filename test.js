@@ -50,18 +50,14 @@ describe('assertHasKeys(object, [\'key1\', \'key1\'])', function () {
 
 describe('the assertion error', function () {
 	it('should throw a valid assert.AssertionError', function () {
-		try {
+		assert.throws(function () {
 			assertHasKeys({foo: 'bar'}, 'bar');
-		} catch (err) {
-			assert(err instanceof assert.AssertionError);
-		}
+		}, assert.AssertionError);
 	});
 
 	it('should have a good message', function () {
-		try {
+		assert.throws(function () {
 			assertHasKeys({foo: 'bar'}, 'bar');
-		} catch (err) {
-			assert.equal(err.message, 'bar property is missing');
-		}
+		}, 'bar property is missing');
 	});
 });
