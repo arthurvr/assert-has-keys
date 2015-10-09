@@ -13,7 +13,7 @@ $ npm install --save assert-has-keys
 ## Usage
 
 ```js
-var assertHasKeys = require('assert-has-keys');
+const assertHasKeys = require('assert-has-keys');
 
 assertHasKeys({foo: 'bar'}, 'foo');
 assertHasKeys({foo: 'bar'}, ['foo']);
